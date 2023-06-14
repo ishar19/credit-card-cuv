@@ -1,0 +1,33 @@
+/** 
+  Breakpoints:
+  ------------
+  sm: min-width: 640px; //small device
+  md: min-width: 768px; // medium device
+  lg: min-width: 1024px; // large device
+  xl: min-width: 1280px; // extra large device
+  2xl: min-width: 1536px; // 2 x extra large device
+**/
+
+.App {
+  text-align: center;
+}
+
+.Form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 4rem;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* For desktop */
+  .App {
+    display: flex;
+    height: 100vh;
+  }
+
+  .Form {
+    margin-top: unset;
+  }
+}
